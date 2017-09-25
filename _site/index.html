@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+ <html>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="../css/resposive.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
+<link href="css/simple-grid.css" rel="stylesheet" type="text/css">
+
+ <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link src="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.9/flickity.min.css" rel="stylesheet" type="text/css" media="screen">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.9/flickity.pkgd.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>    
+<head>
+<script>
+var num = 300; //number of pixels before modifying styles
+
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > num) {
+        $('#menu').addClass('fixed');
+    } else {
+        $('#menu').removeClass('fixed');
+    }
+});
+    </script>
+<script>
+$(function() {
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    center: true,
+    info: true,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+    responsiveClass:true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+      768: {
+        items: 4
+      }
+    }
+  });
+});
+    
+    
+</script>
+<script>
+$(function() {
+  $('nav a[href^="../' + location.pathname.split("/")[1] + '"]').addClass('active');
+  $('nav a[href^="' + location.pathname.split("/")[1] + '"]').addClass('active');  
+}); 
+</script>
+<script>
+  
+</script>
+</head>
+<header class="header">AdLift</header>
+<body>
+
+<div class="box">
+    <div class="menu-box">
+<nav id="menu" >
+    <ul>
+    <li class=""><a href="index.html">Home</a></li>
+    <li><a href="../about.html">About</a></li>
+    <li><a href="../contact.html">Contact</a></li>
+    </ul>
+</nav>  
+        </div>
+<div class="deck">
+    <script>
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.location').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+</script>
+
+<div class="seprator">
+<h1 class="itext">Reach your audience inside lifts!</h1><span>WHY ADLIFT ?</span>
+</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <!-- This content will take up 3/12 (or 1/4) of the container -->
+            <i class="fa fa-inr fa-3x"></i><span><a class="title">Cheap</a><p><br>AdLift provides at very affordable rates. So everybody can meet thier audience.</p></span>
+        </div>
+        <div class="col-4">
+          <!-- This content will take up 3/12 (or 1/4) of the container -->
+            <i class="fa fa-bullseye fa-3x"></i><span><a class="title">Effective</a><p><br>Our service is tried and trusted by many clients now.</p></span>
+        </div>
+        <div class="col-4">
+          <!-- This content will take up 6/12 (or 1/2) of the container -->
+            <i class="fa fa-lightbulb-o fa-3x"></i><span><a class="title">Unique</a><p><br>AdLift is the only company into Lift advertisment.</p></span>
+        </div>
+      </div>
+    </div> 
+<br>
+<h3 class="mtext">A little glimps of our work</h3>
+<div class="container carousel"
+  data-flickity='{ "imagesLoaded": true }'>
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree" />
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" alt="submerged" />
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" alt="look-out" />
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" />
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle" />
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />
+</div>
+<br>
+<br>
+<br>
+<br>
+<h1 class="itext">Locations</h1>
+<!-- MAP -->
+<br>
+<div class="container">
+    <div class="map">
+<div id="container">
+    <div class="row">
+        <div class="col-4"></div>
+    <div class="col-8">
+    <div class="location"><i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>&nbsp;Andehri</div>  
+        </div>
+    </div>
+</div>
+<div id="container">
+    <div class="row">
+        <div class="col-8"></div>
+    <div class="col-4">
+    <div class="location"><i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>&nbsp;Malad</div>  
+        </div>
+    </div>
+</div>
+
+<div id="container">
+    <div class="row">
+        <div class="col-2"></div>
+    <div class="col-10">
+    <div class="location"><i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>&nbsp;Kalyan</div>  
+        </div>
+    </div>
+</div>
+
+<div id="container">
+    <div class="row">
+        <div class="col-6"></div>
+    <div class="col-6">
+    <div class="location"><i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>&nbsp;Goregaon</div>  
+        </div>
+    </div>
+</div>
+
+<div id="container">
+    <div class="row">
+        <div class="col-4"></div>
+    <div class="col-8">
+    <div class="location"><i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>&nbsp;Malwani</div>  
+        </div>
+    </div>
+</div>
+        
+</div>
+</div>
+<!-- MAP ENDS -->
+<br>
+<br>
+<br>
+<h1 class="itext">Join Us!</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+        <div class="p-container"><h3 class="mtext">Advertiser</h3><p class="sub-mtext">Create a campaign and increase your audience.<span><img src="img/chatting.png"></span></p></div>
+        </div>
+        <div class="col-6">
+            <div class="p-container"><h3 class="mtext">Publisher</h3><p class="sub-mtext">Maximize your revenue by displaying our ads.<span><img src="img/bars-chart.png"></span></p></div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<h1 class="itext">Companies worked with</h1>
+<div class="carousel"
+  data-flickity='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": 900, "pauseAutoPlayOnHover": false, "prevNextButtons": false, "pageDots": false }'>
+  <img src="http://demo.leafthemes.com/brown-2/wp-content/uploads/sites/5/2014/03/amazon1.png" alt="orange tree" />
+  <img src="http://demo.leafthemes.com/brown-2/wp-content/uploads/sites/5/2014/03/wordpress1.png" alt="submerged" />
+  <img src="http://demo.leafthemes.com/brown-2/wp-content/uploads/sites/5/2014/03/woocommerce1.png" alt="look-out" />
+  <img src="http://demo.leafthemes.com/brown-2/wp-content/uploads/sites/5/2014/03/envato1.png" alt="One World Trade" />
+  <img src="http://demo.leafthemes.com/brown-2/wp-content/uploads/sites/5/2014/03/jquery1.png" alt="drizzle" />
+  <img src="http://demo.leafthemes.com/brown-2/wp-content/uploads/sites/5/2014/03/microlancer1.png" alt="cat nose" />
+</div>
+<br>
+
+
+<div class="footer">
+<p style="text-align:center;">Copyright © 2017 AdLift</p><span>
+<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+</span>
+ </div>
+ </div>
+ 
+</div>
+</body>
+     
+</html>

@@ -1,0 +1,144 @@
+---
+layout: default
+---
+<script>
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.location').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+</script>
+
+<div class="seprator">
+<h1 class="itext">Reach your audience inside lifts!</h1><span>WHY ADLIFT ?</span>
+</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <!-- This content will take up 3/12 (or 1/4) of the container -->
+            <i class="fa fa-inr fa-3x"></i><span><a class="title">Cheap</a><p><br>AdLift provides at very affordable rates. So everybody can meet thier audience.</p></span>
+        </div>
+        <div class="col-4">
+          <!-- This content will take up 3/12 (or 1/4) of the container -->
+            <i class="fa fa-bullseye fa-3x"></i><span><a class="title">Effective</a><p><br>Our service is tried and trusted by many clients now.</p></span>
+        </div>
+        <div class="col-4">
+          <!-- This content will take up 6/12 (or 1/2) of the container -->
+            <i class="fa fa-lightbulb-o fa-3x"></i><span><a class="title">Unique</a><p><br>AdLift is the only company into Lift advertisment.</p></span>
+        </div>
+      </div>
+    </div> 
+<br>
+<h3 class="mtext">A little glimps of our work</h3>
+<div class="container carousel"
+  data-flickity='{ "imagesLoaded": true }'>
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree" />
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" alt="submerged" />
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" alt="look-out" />
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" />
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle" />
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />
+</div>
+<br>
+<br>
+<br>
+<br>
+<h1 class="itext">Locations</h1>
+<!-- MAP -->
+<br>
+<div class="container">
+    <div class="map">
+<div id="container">
+    <div class="row">
+        <div class="col-4"></div>
+    <div class="col-8">
+    <div class="location"><i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>&nbsp;Andehri</div>  
+        </div>
+    </div>
+</div>
+<div id="container">
+    <div class="row">
+        <div class="col-8"></div>
+    <div class="col-4">
+    <div class="location"><i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>&nbsp;Malad</div>  
+        </div>
+    </div>
+</div>
+
+<div id="container">
+    <div class="row">
+        <div class="col-2"></div>
+    <div class="col-10">
+    <div class="location"><i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>&nbsp;Kalyan</div>  
+        </div>
+    </div>
+</div>
+
+<div id="container">
+    <div class="row">
+        <div class="col-6"></div>
+    <div class="col-6">
+    <div class="location"><i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>&nbsp;Goregaon</div>  
+        </div>
+    </div>
+</div>
+
+<div id="container">
+    <div class="row">
+        <div class="col-4"></div>
+    <div class="col-8">
+    <div class="location"><i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>&nbsp;Malwani</div>  
+        </div>
+    </div>
+</div>
+        
+</div>
+</div>
+<!-- MAP ENDS -->
+<br>
+<br>
+<br>
+<h1 class="itext">Join Us!</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+        <div class="p-container"><h3 class="mtext">Advertiser</h3><p class="sub-mtext">Create a campaign and increase your audience.<span><img src="img/chatting.png"></span></p></div>
+        </div>
+        <div class="col-6">
+            <div class="p-container"><h3 class="mtext">Publisher</h3><p class="sub-mtext">Maximize your revenue by displaying our ads.<span><img src="img/bars-chart.png"></span></p></div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<h1 class="itext">Companies worked with</h1>
+<div class="carousel"
+  data-flickity='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": 900, "pauseAutoPlayOnHover": false, "prevNextButtons": false, "pageDots": false }'>
+  <img src="http://demo.leafthemes.com/brown-2/wp-content/uploads/sites/5/2014/03/amazon1.png" alt="orange tree" />
+  <img src="http://demo.leafthemes.com/brown-2/wp-content/uploads/sites/5/2014/03/wordpress1.png" alt="submerged" />
+  <img src="http://demo.leafthemes.com/brown-2/wp-content/uploads/sites/5/2014/03/woocommerce1.png" alt="look-out" />
+  <img src="http://demo.leafthemes.com/brown-2/wp-content/uploads/sites/5/2014/03/envato1.png" alt="One World Trade" />
+  <img src="http://demo.leafthemes.com/brown-2/wp-content/uploads/sites/5/2014/03/jquery1.png" alt="drizzle" />
+  <img src="http://demo.leafthemes.com/brown-2/wp-content/uploads/sites/5/2014/03/microlancer1.png" alt="cat nose" />
+</div>
+<br>
+
