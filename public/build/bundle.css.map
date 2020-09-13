@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "Footer.svelte"
+  ],
+  "sourcesContent": [
+    "<style>\r\n  .bottom {\r\n    text-align: center;\r\n  }\r\n</style>\r\n\r\n<br />\r\n<br />\r\n<div class=\"navbar-spacer\" />\r\n<div class=\"bottom\">Copyright 2020 - Mohammed Nadeem Siddique</div>\r\n"
+  ],
+  "names": [],
+  "mappings": "AACE,OAAO,eAAC,CAAC,AACP,UAAU,CAAE,MAAM,AACpB,CAAC"
+}
